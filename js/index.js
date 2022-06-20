@@ -88,7 +88,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function btnAnimation(parent) {
-    console.log('click');
     let pulse = document.createElement('span');
     pulse.classList.add('pulse');
     parent.append(pulse);
@@ -139,11 +138,4 @@ window.addEventListener('DOMContentLoaded', () => {
       btnAnimation(target);
   }));
 
-  console.log(`[v] Смена изображений в секции portfolio (фото меняются, кнопки реагируют) +25\n
-  [v] Перевод страницы на два языка (перевод осуществляется в направлениях Ru > En, En > Ru, языковы обозначения стилизуются) +25\n
-  [v] Переключение светлой и тёмной темы (в оба направления, стили интерактивных элементов не страдают) +25\n
-  [v] Реализован функционал с сохранением пользовательских настроек в localStorage +5\n
-  [v] Добавлена дополнительная интерактивность при клике на кнопки +5\n
-  
-  Итого: 85 баллов`);
 });
