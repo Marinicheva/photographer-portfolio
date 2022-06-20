@@ -439,43 +439,6 @@ a {
   cursor: pointer;
 }
 
-/*
-.video {
-  padding: 85px 20px 0;
-}
-
-.player {
-  position: relative;
-  max-width: 1400px;
-  height: 705px;
-  background-image: url("../assets/img/video-player.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.player__btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 130px;
-  height: 130px;
-  background-color: transparent;
-  background-image: url(../assets/svg/Play_btn.svg);
-  background-size: contain;
-  border: none;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.player__btn:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-}
-
-.player__btn:hover .player__btn-img path {
-  fill: var(--beige);
-}*/
-
 /*Price*/
 .price {
   padding: 100px 20px;
