@@ -327,6 +327,119 @@ a {
 }
 
 /*Video*/
+.player-container {
+  position: relative;
+  border: 1px solid #BDAE82;
+}
+
+.player-poster {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/video-player-poster.jpg");
+  background-size: cover;
+  transition: 1s;
+  z-index: 10;
+}
+
+.player-poster_hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.player__video {
+  position: relative;
+}
+
+.video {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.player__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  background-image: url("../assets/svg/play-btn.svg");
+  background-size: cover;
+  transition: .6s;
+  z-index: 15;
+}
+
+.player__btn_hide {
+  display: none;
+}
+
+/*Controls*/
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+}
+
+.play-btn {
+  width: 40px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url("../assets/svg/play.svg");
+  background-size: cover;
+}
+
+.progress {
+  flex: 1;
+}
+
+.progress-bar {
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: -webkit-linear-gradient(0deg, #FFFFFF 25%, #FFFFFF 100%);
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.volume-mute-btn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url("../assets/svg/volume.svg");
+  background-size: cover;
+}
+
+.volume-bar {
+  -webkit-appearance: none;
+  height: 10px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: -webkit-linear-gradient(0deg, #BDAE82 0%, #BDAE82 25%, #FFFFFF 25%, #FFFFFF 100%);
+}
+
+.volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+/*
 .video {
   padding: 85px 20px 0;
 }
@@ -361,7 +474,7 @@ a {
 
 .player__btn:hover .player__btn-img path {
   fill: var(--beige);
-}
+}*/
 
 /*Price*/
 .price {
